@@ -10,6 +10,7 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
 
     private Button allRecipe;
+    private Button addRecipe;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +21,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, AllRecipeActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        addRecipe = findViewById(R.id.add_new_recipe);
+        addRecipe.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, RecipeActivity.class);
                 startActivity(intent);
             }
         });

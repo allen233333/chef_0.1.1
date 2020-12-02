@@ -83,6 +83,11 @@ public class RecipesRecViewAdapter extends RecyclerView.Adapter<RecipesRecViewAd
         notifyDataSetChanged();
     }
 
+    public void filteredList(ArrayList<Recipe> filterList) {
+        recipes = filterList;
+        notifyDataSetChanged();
+    }
+
     public class ViewHolder extends RecyclerView.ViewHolder{
         private CardView parent;
         private ImageView imgRecipe;

@@ -7,12 +7,15 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.SearchView;
 
@@ -24,15 +27,12 @@ public class AllRecipeActivity extends AppCompatActivity{
 
     private RecyclerView recipesRecView;
     private RecipesRecViewAdapter adapter;
-    private Button addRecipe;
-    ArrayAdapter <String> arrayAdapter;
+    EditText txt_Search;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_all_recipe);
-
-        ListView listView = findViewById(R.id.my_list);
 
         adapter = new RecipesRecViewAdapter(this);
 
@@ -41,48 +41,43 @@ public class AllRecipeActivity extends AppCompatActivity{
         recipesRecView.setAdapter(adapter);
         recipesRecView.setLayoutManager(new LinearLayoutManager(this));
 
+        txt_Search = (EditText)findViewById(R.id.txt_searchtext);
+
         ArrayList<Recipe> recipes = new ArrayList<>();
-
-        addRecipe = findViewById(R.id.add_new_recipe);
-        addRecipe.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(AllRecipeActivity.this, RecipeActivity.class);
-                startActivity(intent);
-            }
-        });
-
 
         Utils.getInstance();
         adapter.setRecipes(Utils.getAllrecipes());
 
-        arrayAdapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, recipes);
-        listView.setAdapter(arrayAdapter);
-
-
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-
-        getMenuInflater().inflate(R.menu.options_menu, menu);
-        MenuItem menuItem = menu.findItem(R.id.search);
-        SearchView searchView = (SearchView) menuItem.getActionView();
-        searchView.setQueryHint("Search Here");
-
-        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+        txt_Search.addTextChangedListener(new TextWatcher() {
             @Override
-            public boolean onQueryTextSubmit(String s) {
-                return false;
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
             }
 
             @Override
-            public boolean onQueryTextChange(String s) {
-                arrayAdapter.getFilter().filter(s);
-                return true;
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                filter(s.toString());
             }
         });
-
-        return super.onCreateOptionsMenu(menu);
     }
+
+    private void filter(String text)
+    {
+        ArrayList<Recipe> filterList = new ArrayList<>();
+
+        for(Recipe item: Utils.getAllrecipes())
+        {
+            if(item.getName().toLowerCase().contains(text.toLowerCase()))
+            {
+                filterList.add(item);
+            }
+        }
+        adapter.filteredList(filterList);
+    }
+
 }
