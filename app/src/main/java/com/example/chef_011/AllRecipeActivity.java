@@ -72,7 +72,7 @@ public class AllRecipeActivity extends AppCompatActivity{
 
         for(Recipe item: Utils.getAllrecipes())
         {
-            if(item.getName().toLowerCase().contains(text.toLowerCase()))
+            if(item.getIngredient().toLowerCase().contains(text.toLowerCase()))
             {
                 filterList.add(item);
             }
