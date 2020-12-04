@@ -28,8 +28,14 @@ public class Utils {
 
     private void initData()
     {
-        allrecipes.add(new Recipe("FriedChicken", "crackers, flour, potato flakes, salt, black pepper, chicken breast, egg", "https://cdn.cnn.com/cnnnext/dam/assets/190123071624-fried-chicken-stock-super-tease.jpg" ));
-        allrecipes.add(new Recipe("FriedRice", "Rice, Carrot, Onion, Beens, Corns", "https://journeyto8.files.wordpress.com/2011/03/chicken-fried-rice.jpg"));
+
+        allrecipes.add(new Recipe(1,"FriedChicken","crackers, flour, potato flakes, salt, black pepper, chicken breast, egg","https://cdn.cnn.com/cnnnext/dam/assets/190123071624-fried-chicken-stock-super-tease.jpg"));
+        allrecipes.add(new Recipe(2,"FriedRice", "Rice, Carrot, Onion, Beens, Corns", "https://journeyto8.files.wordpress.com/2011/03/chicken-fried-rice.jpg"));
+        allrecipes.add(new Recipe(3,"FriedRice", "Rice, Carrot, Onion, Beens, Corns", "https://journeyto8.files.wordpress.com/2011/03/chicken-fried-rice.jpg"));
+        allrecipes.add(new Recipe(4,"FriedRice", "Rice, Carrot, Onion, Beens, Corns", "https://journeyto8.files.wordpress.com/2011/03/chicken-fried-rice.jpg"));
+        allrecipes.add(new Recipe(5,"FriedRice", "Rice, Carrot, Onion, Beens, Corns", "https://journeyto8.files.wordpress.com/2011/03/chicken-fried-rice.jpg"));
+        allrecipes.add(new Recipe(6,"FriedRice", "Rice, Carrot, Onion, Beens, Corns", "https://journeyto8.files.wordpress.com/2011/03/chicken-fried-rice.jpg"));
+        allrecipes.add(new Recipe(7,"FriedRice", "Rice, Carrot, Onion, Beens, Corns", "https://journeyto8.files.wordpress.com/2011/03/chicken-fried-rice.jpg"));
 
     }
 
@@ -37,14 +43,20 @@ public class Utils {
         return allrecipes;
     }
 
-    public boolean addToList (Recipe recipe)
-    {
-        return allrecipes.add(recipe);
-    }
-
     public boolean removeFromList (Recipe recipe)
     {
         return allrecipes.remove(recipe);
+    }
+
+    public Recipe getRecipebyId(int id){
+        for (Recipe r:allrecipes){
+            if(r.getRecipeId() == id)
+            {
+                return r;
+            }
+        }
+
+        return null;
     }
 
 }

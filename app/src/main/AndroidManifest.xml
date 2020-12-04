@@ -12,8 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Chef_011">
         <activity android:name=".RecipeActivity"></activity>
-        <activity android:name=".AllRecipeActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".AllRecipeActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

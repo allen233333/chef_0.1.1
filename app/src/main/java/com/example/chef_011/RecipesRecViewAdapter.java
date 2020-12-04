@@ -1,6 +1,7 @@
 package com.example.chef_011;
 
 import android.content.Context;
+import android.content.Intent;
 import android.transition.TransitionManager;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -44,6 +45,15 @@ public class RecipesRecViewAdapter extends RecyclerView.Adapter<RecipesRecViewAd
                 .asBitmap()
                 .load(recipes.get(position).getImageUrl())
                 .into(holder.imgRecipe);
+
+        holder.parent.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(mContext, RecipeActivity.class);
+                intent.putExtra("recipeId", recipes.get(position).getRecipeId());
+                mContext.startActivity(intent);
+            }
+        });
 
 
         holder.txtRecipe.setText(recipes.get(position).getIngredient());
