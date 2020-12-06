@@ -2,22 +2,13 @@ package com.example.chef_011;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import android.content.Intent;
+
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
-import android.view.View;
-import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ListView;
-import android.widget.SearchView;
 
 
 import java.util.ArrayList;
@@ -46,7 +37,7 @@ public class AllRecipeActivity extends AppCompatActivity{
         ArrayList<Recipe> recipes = new ArrayList<>();
 
         Utils.getInstance();
-        adapter.setRecipes(Utils.getAllrecipes());
+        adapter.setRecipes(Utils.getAllRecipes());
 
         txt_Search.addTextChangedListener(new TextWatcher() {
             @Override
@@ -70,7 +61,7 @@ public class AllRecipeActivity extends AppCompatActivity{
     {
         ArrayList<Recipe> filterList = new ArrayList<>();
 
-        for(Recipe item: Utils.getAllrecipes())
+        for(Recipe item: Utils.getAllRecipes())
         {
             if(item.getIngredient().toLowerCase().contains(text.toLowerCase()))
             {

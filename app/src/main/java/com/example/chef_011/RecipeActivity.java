@@ -1,28 +1,18 @@
 package com.example.chef_011;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
-
-import org.w3c.dom.Text;
-
-import java.util.ArrayList;
 
 public class RecipeActivity extends AppCompatActivity {
 
     private static final String RECIPE_ID_KEY = "recipeId";
-    private TextView txtname, txtingredient;
+    private TextView txtName, txtIngredient, txtDescription, txtPrepTime;
     private ImageView recipeImage;
 
     @Override
@@ -30,8 +20,10 @@ public class RecipeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recipe);
 
-        txtname = findViewById(R.id.txtname);
-        txtingredient = findViewById(R.id.txtingredient);
+        txtName = findViewById(R.id.txtName);
+        txtIngredient = findViewById(R.id.txtingredient);
+        txtDescription = findViewById(R.id.txtDescrip);
+        txtPrepTime = findViewById(R.id.textPreptime);
         recipeImage = findViewById(R.id.imgRecipe);
 
         Intent intent = getIntent();
@@ -39,7 +31,7 @@ public class RecipeActivity extends AppCompatActivity {
         if(null != intent){
             int recipeId = intent.getIntExtra(RECIPE_ID_KEY, -1 );
             if(recipeId != -1){
-                Recipe incomingRecipe = Utils.getInstance().getRecipebyId(recipeId);
+                Recipe incomingRecipe = Utils.getInstance().getRecipeById(recipeId);
                 if(null != incomingRecipe){
                     setData(incomingRecipe);
                 }
@@ -49,8 +41,10 @@ public class RecipeActivity extends AppCompatActivity {
     }
 
     private void setData(Recipe recipe){
-        txtname.setText(recipe.getName());
-        txtingredient.setText((recipe.getIngredient()));
+        txtName.setText(recipe.getName());
+        txtIngredient.setText((recipe.getIngredient()));
+        txtPrepTime.setText(recipe.getPrepTime());
+        txtDescription.setText(recipe.getDescription());
         Glide.with(this)
                 .asBitmap().load(recipe.getImageUrl())
                 .into(recipeImage);

@@ -2,16 +2,21 @@ package com.example.chef_011;
 
 public class Recipe {
     private int RecipeId;
+    private String prepTime;
     private String name;
     private String ingredient;
     private String ImageUrl;
+    private String Description;
     private boolean isExpanded;
 
-    public Recipe(int RecipeId, String name, String ingredient, String ImageUrl){
+    public Recipe(int RecipeId, String prepTime, String name, String ingredient,
+                  String ImageUrl, String Description){
         this.RecipeId = RecipeId;
+        this.prepTime = prepTime;
         this.name = name;
         this.ingredient = ingredient;
         this.ImageUrl = ImageUrl;
+        this.Description = Description;
         isExpanded = false;
     }
 
@@ -22,6 +27,8 @@ public class Recipe {
     public void setRecipeId(int recipeId) {
         RecipeId = recipeId;
     }
+
+    public String getPrepTime() { return prepTime; }
 
     public boolean isExpanded()
     {
@@ -52,6 +59,8 @@ public class Recipe {
     {
         return ingredient;
     }
+
+    public String getDescription() {return Description; }
 
     public String getImageUrl()
     {

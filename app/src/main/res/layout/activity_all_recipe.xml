@@ -28,7 +28,7 @@
         android:layout_margin="5dp"
         android:hint="Enter your ingredients..."
         android:textSize="22sp"
-        android:textColor="#ffffff"/>
+        android:textColor="#8c00e3"/>
 
 
 
