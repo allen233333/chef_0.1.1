@@ -31,7 +31,7 @@ public class Utils {
 
         allrecipes.add(new Recipe(1,"Apple Pie", "Flour, Sugar, Salt, Butter, Egg, Lemon, Apple, Cinamon, Nutmeg", "https://i.ytimg.com/vi/RoHWiA6pogg/maxresdefault.jpg"));
         allrecipes.add(new Recipe(2,"Beef Stew", "Beef, Garlic, Salt, Black Pepper, Zucchini, Broth, Carrot, Cabbage, Cilantro, Onion, Corn", "https://www.isabeleats.com/wp-content/uploads/2018/09/caldo-de-res-small-5-500x375.jpg"));
-        allrecipes.add(new Recipe(3,"Clam Chowder", "Clams, , Salt, Black Pepper, Zucchini, Broth, Carrot, Cabbage, Cilantro, Onion, Corn", "https://www.isabeleats.com/wp-content/uploads/2018/09/caldo-de-res-small-5-500x375.jpg"));
+        allrecipes.add(new Recipe(3,"Clam Chowder", "Clams, , Salt, Black Pepper, Potato, Cream, Onion", "https://letsdishrecipes.com/wp-content/uploads/2018/12/Clam-Chowder-feature-480x480.jpg"));
         allrecipes.add(new Recipe(4,"FriedChicken","Crackers, Flour, Potato Flakes, Salt, Black pepper, Chicken breast, Egg","https://cdn.cnn.com/cnnnext/dam/assets/190123071624-fried-chicken-stock-super-tease.jpg"));
         allrecipes.add(new Recipe(5,"FriedRice", "Rice, Carrot, Onion, Beans, Corn", "https://journeyto8.files.wordpress.com/2011/03/chicken-fried-rice.jpg"));
         allrecipes.add(new Recipe(6,"Gyro", "Pita Bread, Greek Yogurt, Lamb, Feta, Onion, Pepper, Dill", "https://www.greekboston.com/wp-content/uploads/2018/07/Traditional-Gyro.jpg"));

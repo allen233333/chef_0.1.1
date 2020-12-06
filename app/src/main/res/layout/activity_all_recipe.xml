@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AllRecipeActivity">
+    tools:context=".AllRecipeActivity"
+    android:background="@drawable/gradient_background">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recipesRecView"
@@ -21,11 +22,13 @@
 
     <EditText
         android:id="@+id/txt_searchtext"
-        android:layout_width="match_parent"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
         android:layout_margin="5dp"
-        android:hint="Search"
-        android:textSize="22sp" />
+        android:hint="Enter your ingredients..."
+        android:textSize="22sp"
+        android:textColor="#ffffff"/>
 
 
 
