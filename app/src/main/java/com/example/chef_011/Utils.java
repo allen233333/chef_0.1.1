@@ -29,7 +29,7 @@ public class Utils {
     private void initData()
     {
 
-        allrecipes.add(new Recipe(1,"2 1/2 Hours","Apple Pie",
+        allrecipes.add(new Recipe(1,"2, 1/2 Hours","Apple Pie",
                 "Flour, Sugar, Salt, Butter, Egg, Lemon, Apple, Cinamon, Nutmeg",
                 "https://i.ytimg.com/vi/RoHWiA6pogg/maxresdefault.jpg",
                 "Dessert"));
@@ -89,8 +89,6 @@ public class Utils {
                 "Flour, Salt, Olive Oil, Egg, Ricotta Cheese, Cream Cheese, Mozzarella, Garlic, Heavy cream, Marinara, Basil",
                 "https://saltsugarspice.com/wp-content/uploads/2020/04/20200329_173329-1.jpg",
                 "Dinner"));
-
-
     }
 
     public static ArrayList<Recipe> getAllRecipes() {

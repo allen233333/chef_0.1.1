@@ -59,6 +59,8 @@ public class AllRecipeActivity extends AppCompatActivity{
 
     private void filter(String text)
     {
+
+        // string parse the
         ArrayList<Recipe> filterList = new ArrayList<>();
 
         for(Recipe item: Utils.getAllRecipes())
