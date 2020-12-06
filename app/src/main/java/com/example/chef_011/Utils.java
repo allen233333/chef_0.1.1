@@ -39,7 +39,7 @@ public class Utils {
                 "Dinner"));
         allrecipes.add(new Recipe(3,"45 Minutes","Clam Chowder",
                 "Clams, , Salt, Black Pepper, Potato, Cream, Onion",
-                "https://letsdishrecipes.com/wp-content/uploads/2018/12/Clam-Chowder-feature-480x480.jpg",
+                "https://honest-food.net/wp-content/uploads/2012/05/maine-clam-chowder-500x375.jpg",
                 "Snack"));
         allrecipes.add(new Recipe(4,"35 Minutes","FriedChicken",
                 "Crackers, Flour, Potato Flakes, Salt, Black pepper, Chicken breast, Egg",
@@ -67,15 +67,15 @@ public class Utils {
                 "Lunch"));
         allrecipes.add(new Recipe(10,"40 Minutes","Mac & Cheese",
                 "Macaroni, Butter, Oil, Milk, Cheddar, Bread Crumbs",
-                "https://www.momontimeout.com/wp-content/uploads/2018/10/homemade-mac-and-cheese-recipe-titled-500x500.jpg",
+                "https://images-gmi-pmc.edge-generalmills.com/34fd13d2-fa5f-46a8-be0b-71f7c648b7bd.jpg",
                 "Dinner"));
         allrecipes.add(new Recipe(11,"35 Minutes","Mashed Potatoes",
                 "Potato, Heavy Cream, Butter, Thyme, Salt, Pepper",
-                "https://www.thespruceeats.com/thmb/aV3a6phN-0r_0hsFnrMb5ezHG1g=/3000x3000/smart/filters:no_upscale()/easy-microwave-mashed-potatoes-3059678_hero-01-520a91abceb44719ae5a24a179af8645.jpg",
+                "https://assets.marthastewart.com/styles/wmax-750/d30/garlic-mashed-potatoes-a101006/garlic-mashed-potatoes-a101006_horiz.jpg?itok=veOwxEQD",
                 "Dinner"));
         allrecipes.add(new Recipe(12,"10 Minutes","Oatmeal",
                 "Oats, Milk, Sugar, Berries, Banana, Cinamon, Chia Seeds",
-                "https://fitfoodiefinds.com/wp-content/uploads/2015/10/classic-oatmeal.jpg",
+                "https://pickyeaterblog.com/wp-content/uploads/2010/11/Anjali_PumpkinPieOatmeal12.jpg",
                 "Breakfast"));
         allrecipes.add(new Recipe(13,"15 Minutes","Omelette",
                 "Egg, Butter, Spinach, Mushroom, Provalon, Salt",
