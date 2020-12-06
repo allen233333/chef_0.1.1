@@ -6,7 +6,8 @@
     android:id="@+id/parent"
     app:cardCornerRadius="7dp"
     app:cardElevation="7dp"
-    android:layout_margin="5dp">
+    android:layout_margin="5dp"
+   app:cardBackgroundColor="#fee140">
 
     <RelativeLayout
         android:layout_width="200dp"
@@ -36,7 +37,8 @@
                 android:layout_marginTop="6dp"
                 android:text="Recipe Name"
                 android:textSize="16sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:textColor="#7700FF"/>
 
             <ImageView
                 android:layout_width="wrap_content"
