@@ -30,7 +30,7 @@ public class Utils {
     {
 
         allrecipes.add(new Recipe(1,"2, 1/2 Hours","Apple Pie",
-                "Flour, Sugar, Salt, Butter, Egg, Lemon, Apple, Cinamon, Nutmeg",
+                "Flour, Sugar, Salt, Butter, Egg, Lemon, Apple, Cinnamon, Nutmeg, Cornstarch",
                 "https://i.ytimg.com/vi/RoHWiA6pogg/maxresdefault.jpg",
                 "Dessert"));
         allrecipes.add(new Recipe(2,"45 Minutes","Beef Stew",
@@ -42,11 +42,11 @@ public class Utils {
                 "https://honest-food.net/wp-content/uploads/2012/05/maine-clam-chowder-500x375.jpg",
                 "Snack"));
         allrecipes.add(new Recipe(4,"35 Minutes","FriedChicken",
-                "Crackers, Flour, Potato Flakes, Salt, Black pepper, Chicken breast, Egg",
+                "Crackers, Flour, Potato Flakes, Salt, Black Pepper, Chicken Breast, Egg",
                 "https://cdn.cnn.com/cnnnext/dam/assets/190123071624-fried-chicken-stock-super-tease.jpg",
                 "Dinner"));
         allrecipes.add(new Recipe(5,"20 Minutes","FriedRice",
-                "Rice, Carrot, Onion, Beans, Corn, Oil",
+                "Rice, Carrot, Onion, Beans, Corn, Oil, Egg",
                 "https://journeyto8.files.wordpress.com/2011/03/chicken-fried-rice.jpg",
                 "Lunch"));
         allrecipes.add(new Recipe(6,"1 Hour","Gyro",
@@ -58,7 +58,7 @@ public class Utils {
                 "https://www.simplyrecipes.com/wp-content/uploads/2018/07/Guacamole-LEAD-2.jpg",
                 "Snack"));
         allrecipes.add(new Recipe(8, "15 Minutes", "Hamburger",
-                "Beef, Buns, Lettuce, Onion, Cheese, Ketchup, Mustard",
+                "Beef, Buns, Lettuce, Onion, Pickles, Tomato, Cheese, Ketchup, Mustard",
                 "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2004/2/25/0/bw2b07_hambugers1.jpg.rend.hgtvcom.616.462.suffix/1558017418187.jpeg",
                 "Dinner"));
         allrecipes.add(new Recipe(9, "20 Minutes", "Lobster Roll",
@@ -67,7 +67,7 @@ public class Utils {
                 "Lunch"));
         allrecipes.add(new Recipe(10,"40 Minutes","Mac & Cheese",
                 "Macaroni, Butter, Oil, Milk, Cheddar, Bread Crumbs",
-                "https://images-gmi-pmc.edge-generalmills.com/34fd13d2-fa5f-46a8-be0b-71f7c648b7bd.jpg",
+                "https://i.ytimg.com/vi/z7V5PoAgmt0/maxresdefault.jpg",
                 "Dinner"));
         allrecipes.add(new Recipe(11,"35 Minutes","Mashed Potatoes",
                 "Potato, Heavy Cream, Butter, Thyme, Salt, Pepper",
