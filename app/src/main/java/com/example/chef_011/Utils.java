@@ -85,29 +85,29 @@ public class Utils {
                 "Flour, Baking Powder, Salt, Sugar, Milk, Egg, Butter, Syrup",
                 "https://recipesbycarina.com/wp-content/uploads/2020/09/Pancake-Recipe.jpg",
                 "Breakfast"));
-        allrecipes.add(new Recipe(15,"2 Hours","Ravioli",
+        allrecipes.add(new Recipe(15,"50 Minutes","Quiche",
+                "Pie Crust, Egg, Milk, Salt, Black Pepper, Cooked Ham, Shredded Cheese, Green Onions",
+                "https://www.seasonsandsuppers.ca/wp-content/uploads/2019/03/classic-quiche-lorraine-A.jpg",
+                "Breakfast"));
+        allrecipes.add(new Recipe(16,"2 Hours","Ravioli",
                 "Flour, Salt, Olive Oil, Egg, Ricotta Cheese, Cream Cheese, Mozzarella, Garlic, Heavy cream, Marinara, Basil",
                 "https://saltsugarspice.com/wp-content/uploads/2020/04/20200329_173329-1.jpg",
                 "Dinner"));
-        allrecipes.add(new Recipe(16,"50 Minutes","Quiche",
-                "Pie Crust, Egg, Milk, Salt, Black Pepper, Cooked Ham, Shredded Cheese, Green Onions",
-                "https://www.spendwithpennies.com/wp-content/uploads/2018/06/IMG_6052.jpg",
-                "Breakfast"));
         allrecipes.add(new Recipe(17,"2 Hours","Roast Beef",
-                "Olive oil,Round Roast, Garlic, Rosemary, Thyme, Salt, Black Pepper",
-                "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-roast-beef-vertical-1540505165.jpg?crop=1xw:1xh;center,top&resize=768:*",
+                "Olive oil, Round Roast, Garlic, Rosemary, Thyme, Salt, Black Pepper",
+                "https://challengedairy.com/sites/default/files/recipe/images/recipe_roast_beef_with_tangy_mustard_sauce_2280.jpg",
                 "Dinner"));
         allrecipes.add(new Recipe(18,"20 Minutes","Salmon",
-                "Honey, Soy Sauce, Lemon Juice, Red Pepper Flakes, Olive Oil, Salmon Fillets,Guacamole, Salt, Black Pepper, Garlic, Lemon",
-                "https://hips.hearstapps.com/del.h-cdn.co/assets/17/39/1600x2399/gallery-1506456214-delish-honey-garlic-glazed-salmon.jpg?resize=768:*",
+                "Honey, Soy Sauce, Lemon Juice, Red Pepper Flakes, Olive Oil, Salmon Fillets, Salt, Black Pepper, Garlic, Lemon",
+                "https://hips.hearstapps.com/delish/assets/17/39/1506456157-delish-honey-garlic-glazed-salmon-1.jpg",
                 "Lunch"));
         allrecipes.add(new Recipe(19,"30 Minutes","Tacos",
-                "Olive oil,Ground Beef (or Chicken), Onion Powder, Salt, Pepper, Tortillas,Guacamole, Sour Cream, Tomato, Shredded Cheese",
-                "https://www.cookingclassy.com/wp-content/uploads/2019/03/ground-beef-tacos-11.jpg",
+                "Olive Oil, Ground Beef, Onion Powder, Salt, Pepper, Tortilla, Sour Cream, Tomato, Shredded Cheese",
+                "https://www.missionfoods.com/uploads/Ground-Beef-Soft-Taco.jpg",
                 "Lunch"));
-        allrecipes.add(new Recipe(20,"2 Hours 30 Minutes","Ukranian Rolls",
-                "Flower,Water, Honey, Vegetable Oil, Salt, Lemon Juice,Traditional Yeast, Egg Yolk, Garlic, Salt",
-                "https://tasteofartisan.com/wp-content/uploads/2019/09/Ukrainian-Pampushki-Recipe-2.jpg",
+        allrecipes.add(new Recipe(20,"2 Hours 30 Minutes","Ukrainian Rolls",
+                "Flower,Water, Honey, Vegetable Oil, Salt, Lemon Juice, Traditional Yeast, Egg Yolk, Garlic, Salt",
+                "https://i0.wp.com/tarasmulticulturaltable.com/wp-content/uploads/2018/10/Pampushky-Ukrainian-Garlic-Bread-4-of-5.jpg?resize=720%2C479&ssl=1",
                 "Breakfast"));
 
     }
