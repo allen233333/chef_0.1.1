@@ -25,12 +25,12 @@
         android:drawableLeft="@drawable/ic_search_pink_foreground"
         android:background="@drawable/search_input_style"
         android:id="@+id/txt_searchtext"
-        android:layout_width="350dp"
+        android:layout_width="385dp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_margin="5dp"
         android:hint="@string/enter_your_ingredients"
-        android:textSize="22sp"
+        android:textSize="14sp"
         android:textColor="#4D00A5"
         android:autofillHints="" />
 
