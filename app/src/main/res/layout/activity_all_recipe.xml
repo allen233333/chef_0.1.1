@@ -26,9 +26,10 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_margin="5dp"
-        android:hint="Enter your ingredients..."
+        android:hint="@string/enter_your_ingredients"
         android:textSize="22sp"
-        android:textColor="#4D00A5"/>
+        android:textColor="#4D00A5"
+        android:autofillHints="" />
 
 
 
