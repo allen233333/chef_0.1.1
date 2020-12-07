@@ -21,11 +21,13 @@
             <ImageView
                 android:id="@+id/imgRecipe"
                 android:layout_width="match_parent"
-                android:layout_height="156dp"
+                android:layout_height="185dp"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
-                android:layout_marginEnd="0dp"
+                android:layout_marginStart="-5dp"
+                android:layout_marginEnd="5dp"
                 android:cropToPadding="true"
+                android:scaleType="fitXY"
                 android:src="@mipmap/ic_launcher" />
 
             <TextView

@@ -35,7 +35,7 @@ public class Utils {
                 "Dessert"));
         allrecipes.add(new Recipe(2,"45 Minutes","Beef Stew",
                 "Beef, Garlic, Salt, Black Pepper, Zucchini, Broth, Carrot, Cabbage, Cilantro, Onion, Corn",
-                "https://www.isabeleats.com/wp-content/uploads/2018/09/caldo-de-res-small-5-500x375.jpg",
+                "https://images-gmi-pmc.edge-generalmills.com/cb2059df-75cd-432f-bade-43b3bee52eb4.jpg",
                 "Dinner"));
         allrecipes.add(new Recipe(3,"45 Minutes","Clam Chowder",
                 "Clams, , Salt, Black Pepper, Potato, Cream, Onion",
@@ -47,11 +47,11 @@ public class Utils {
                 "Dinner"));
         allrecipes.add(new Recipe(5,"20 Minutes","FriedRice",
                 "Rice, Carrot, Onion, Beans, Corn, Oil, Egg",
-                "https://journeyto8.files.wordpress.com/2011/03/chicken-fried-rice.jpg",
+                "https://static.toiimg.com/thumb/75581339.cms?width=1200&height=900",
                 "Lunch"));
         allrecipes.add(new Recipe(6,"1 Hour","Gyro",
                 "Pita Bread, Greek Yogurt, Lamb, Feta, Onion, Pepper, Dill",
-                "https://www.greekboston.com/wp-content/uploads/2018/07/Traditional-Gyro.jpg",
+                "https://www.amenuforyou.com/wp-content/uploads/2017/05/Gyro-1080x578.jpeg",
                 "Lunch"));
         allrecipes.add(new Recipe(7,"5 Minutes", "Guacamole",
                 "Avacado, Lime, Salt, Onion, Cilantro",
@@ -59,7 +59,7 @@ public class Utils {
                 "Snack"));
         allrecipes.add(new Recipe(8, "15 Minutes", "Hamburger",
                 "Beef, Buns, Lettuce, Onion, Pickles, Tomato, Cheese, Ketchup, Mustard",
-                "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2004/2/25/0/bw2b07_hambugers1.jpg.rend.hgtvcom.616.462.suffix/1558017418187.jpeg",
+                "https://images-gmi-pmc.edge-generalmills.com/5dff94d5-f04f-4500-a401-eaaa50f9e72e.jpg",
                 "Dinner"));
         allrecipes.add(new Recipe(9, "20 Minutes", "Lobster Roll",
                 "Lobster, Bun, Butter, Mayonnaise, Butter, Dill",
@@ -75,11 +75,11 @@ public class Utils {
                 "Dinner"));
         allrecipes.add(new Recipe(12,"10 Minutes","Oatmeal",
                 "Oats, Milk, Sugar, Berries, Banana, Cinamon, Chia Seeds",
-                "https://pickyeaterblog.com/wp-content/uploads/2010/11/Anjali_PumpkinPieOatmeal12.jpg",
+                "https://imagesvc.meredithcorp.io/v3/jumpstartpure/image?url=https://timeincsecure-a.akamaihd.net/rtmp_uds/1260616200/201907/2205/1260616200_6065642514001_6065637352001-vs.jpg?pubId=1260616200&videoId=6065637352001&w=1280&h=720&q=90&c=cc",
                 "Breakfast"));
         allrecipes.add(new Recipe(13,"15 Minutes","Omelette",
                 "Egg, Butter, Spinach, Mushroom, Provalon, Salt",
-                "https://www.thechunkychef.com/wp-content/uploads/2017/11/Cheesy-Mushroom-Spinach-Omelet-feat.jpg",
+                "https://www.iheartnaptime.net/wp-content/uploads/2019/01/omelette-recipe.jpg",
                 "Breakfast"));
         allrecipes.add(new Recipe(14,"20 Minutes","Pancakes",
                 "Flour, Baking Powder, Salt, Sugar, Milk, Egg, Butter, Syrup",
