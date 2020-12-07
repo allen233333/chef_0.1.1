@@ -65,7 +65,7 @@ public class AllRecipeActivity extends AppCompatActivity{
         // cut _ on the edges
 
         String[] ingredients = text.split(",");
-        for(int i=0;i<ingredients.length;i++){
+        for(int i=1;i<ingredients.length;i++){
             ingredients[i] = ingredients[i].trim(); //ONLY CUTTING 1 at the begining
             //string string
         }
