@@ -106,7 +106,7 @@ public class Utils {
                 "https://www.missionfoods.com/uploads/Ground-Beef-Soft-Taco.jpg",
                 "Lunch"));
         allrecipes.add(new Recipe(20,"2 Hours 30 Minutes","Ukrainian Rolls",
-                "Flower,Water, Honey, Vegetable Oil, Salt, Lemon Juice, Traditional Yeast, Egg Yolk, Garlic, Salt",
+                "Flower, Water, Honey, Vegetable Oil, Salt, Lemon, Yeast, Egg Yolk, Garlic, Salt",
                 "https://i0.wp.com/tarasmulticulturaltable.com/wp-content/uploads/2018/10/Pampushky-Ukrainian-Garlic-Bread-4-of-5.jpg?resize=720%2C479&ssl=1",
                 "Breakfast"));
 

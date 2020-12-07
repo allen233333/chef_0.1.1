@@ -21,6 +21,9 @@
         android:layout_below="@+id/txt_searchtext"/>
 
     <EditText
+        android:drawablePadding="8dp"
+        android:drawableLeft="@drawable/ic_search"
+        android:background="@drawable/search_input_style"
         android:id="@+id/txt_searchtext"
         android:layout_width="350dp"
         android:layout_height="wrap_content"

@@ -61,14 +61,20 @@ public class AllRecipeActivity extends AppCompatActivity{
     {
 
         // parse the text string (i.e. "Salt, Sugar"), into each ingredient ("Salt","Sugar")
+        String[] ingredients = text.split(", ");
         ArrayList<Recipe> filterList = new ArrayList<>();
 
         for(Recipe item: Utils.getAllRecipes())
         {
             // check each of the parsed ingredients
-            if(item.getIngredient().toLowerCase().contains(text.toLowerCase()))
-            {
-                filterList.add(item);
+            for (String ingredient: ingredients) {
+                if (item.getIngredient().toLowerCase().contains(ingredient.toLowerCase())) {
+                    if(!(filterList.contains(item)))
+                        filterList.add(item);
+                }else {
+                    filterList.remove(item);
+                    break;
+                }
             }
         }
         adapter.filteredList(filterList);
