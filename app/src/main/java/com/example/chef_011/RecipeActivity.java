@@ -3,7 +3,10 @@ package com.example.chef_011;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -14,6 +17,8 @@ public class RecipeActivity extends AppCompatActivity {
     private static final String RECIPE_ID_KEY = "recipeId";
     private TextView txtName, txtIngredient, txtDescription, txtPrepTime;
     private ImageView recipeImage;
+    private Button Inst;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +30,7 @@ public class RecipeActivity extends AppCompatActivity {
         txtDescription = findViewById(R.id.txtDescrip);
         txtPrepTime = findViewById(R.id.textPreptime);
         recipeImage = findViewById(R.id.imgRecipe);
+        Inst=findViewById(R.id.instructions);
 
         Intent intent = getIntent();
 
@@ -38,6 +44,7 @@ public class RecipeActivity extends AppCompatActivity {
             }
         }
 
+
     }
 
     private void setData(Recipe recipe){
@@ -45,12 +52,24 @@ public class RecipeActivity extends AppCompatActivity {
         txtIngredient.setText((recipe.getIngredient()));
         txtPrepTime.setText(recipe.getPrepTime());
         txtDescription.setText(recipe.getDescription());
+        Inst.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                gotoURL(recipe.getInstructionsUrl());;
+            }
+        });
+
         Glide.with(this)
                 .asBitmap().load(recipe.getImageUrl())
                 .into(recipeImage);
     }
 
 
+private void gotoURL(String s){
+        Uri uri = Uri.parse(s);
+        startActivity(new Intent(Intent.ACTION_VIEW,uri));
+
+}
 
 
 }

@@ -6,16 +6,18 @@ public class Recipe {
     private String name;
     private String ingredient;
     private String ImageUrl;
+    private String InstructionsUrl;
     private String Description;
     private boolean isExpanded;
 
     public Recipe(int RecipeId, String prepTime, String name, String ingredient,
-                  String ImageUrl, String Description){
+                  String ImageUrl, String Description, String InstructionsUrl){
         this.RecipeId = RecipeId;
         this.prepTime = prepTime;
         this.name = name;
         this.ingredient = ingredient;
         this.ImageUrl = ImageUrl;
+        this.InstructionsUrl=InstructionsUrl;
         this.Description = Description;
         isExpanded = false;
     }
@@ -66,6 +68,7 @@ public class Recipe {
     {
         return ImageUrl;
     }
+    public String getInstructionsUrl() {return InstructionsUrl;}
 
     public void setImageUrl(String ImageUrl)
     {
