@@ -22,7 +22,7 @@
 
     <EditText
         android:drawablePadding="8dp"
-        android:drawableLeft="@drawable/ic_search"
+        android:drawableLeft="@drawable/ic_search_pink_foreground"
         android:background="@drawable/search_input_style"
         android:id="@+id/txt_searchtext"
         android:layout_width="350dp"
