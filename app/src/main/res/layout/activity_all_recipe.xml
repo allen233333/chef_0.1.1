@@ -9,16 +9,19 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recipesRecView"
-        android:layout_width="wrap_content"
+        android:layout_width="372dp"
         android:layout_height="wrap_content"
-        android:layout_margin="15dp"
+        android:layout_below="@+id/txt_searchtext"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.545"
-        android:layout_below="@+id/txt_searchtext"/>
+        app:layout_constraintVertical_bias="0.545" />
 
     <EditText
         android:drawablePadding="8dp"
