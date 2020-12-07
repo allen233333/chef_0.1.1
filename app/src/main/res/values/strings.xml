@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">Chefs++</string>
     <string name="search_title" />
-    <string name="enter_your_ingredients">Enter ingredients separated by a comma and space</string>
+    <string name="enter_your_ingredients">Enter ingredients separated by a comma</string>
 </resources>

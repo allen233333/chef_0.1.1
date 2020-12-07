@@ -66,7 +66,8 @@ public class AllRecipeActivity extends AppCompatActivity{
 
         String[] ingredients = text.split(",");
         for(int i=0;i<ingredients.length;i++){
-            ingredients[i].trim(); //ONLY CUTTING 1
+            ingredients[i] = ingredients[i].trim(); //ONLY CUTTING 1 at the begining
+            //string string
         }
 
         //String[] ingredients = text.split(", ");
