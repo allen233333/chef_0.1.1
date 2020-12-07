@@ -61,7 +61,15 @@ public class AllRecipeActivity extends AppCompatActivity{
     {
 
         // parse the text string (i.e. "Salt, Sugar"), into each ingredient ("Salt","Sugar")
-        String[] ingredients = text.split(", ");
+        //split by ,
+        // cut _ on the edges
+
+        String[] ingredients = text.split(",");
+        for(int i=0;i<ingredients.length;i++){
+            ingredients[i].trim(); //ONLY CUTTING 1
+        }
+
+        //String[] ingredients = text.split(", ");
         ArrayList<Recipe> filterList = new ArrayList<>();
 
         for(Recipe item: Utils.getAllRecipes())
