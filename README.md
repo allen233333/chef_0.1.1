@@ -1,11 +1,11 @@
 # chef_0.1.1
-App name: Chefs++
+#App name: Chefs++
 
-Platform: Android
+#Platform: Android
 
-Creators: Ivan Barcenes, Issam Haddad, Elisa Cordeiro Lopes and Xinyu Liu.
+#Creators: Ivan Barcenes, Issam Haddad, Elisa Cordeiro Lopes and Xinyu Liu.
 
-Language: Java
+#Language: Java
 
 
 
